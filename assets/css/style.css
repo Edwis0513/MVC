@@ -17,6 +17,12 @@ h3 {
     margin: 34px 0 30px;
 }
 
+h4 { 
+    font-size: 24px;
+    color: #001943;
+    font-weight: 400;
+}
+
 h5 {
     color: #263246;
     font-size: 20px;
@@ -28,6 +34,7 @@ p {
     color: #6e7580;
     line-height: 26px;
 }
+
 .mb-20 {
     margin-bottom: 20px;
 }
@@ -47,6 +54,7 @@ p {
 .pt-100 {
     padding-top: 100px;
 }
+
 .pb-80 {
     padding-bottom: 80px;
 }
@@ -125,5 +133,46 @@ ul {
     background-color: #fff;
     padding: 40px 15px 60px;
     border-radius: 10px;
+    box-shadow: 0 0 65px rgba(12, 26, 39, .05);
+}
+
+/* HOME classes */
+
+.classes-img {
+    position: relative;
+    height: 240px;
+    width: 100%;
+}
+
+.classes-img span {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    color: #fff;
+    background-color: #5768ad;
+    font-size: 14px;
+    padding: 7px 16px 4px;
+}
+
+.classes-item-text a {
+    text-decoration: none;
+}
+
+.button-join {
+    display: inline-block;
+    font-weight: 700;
+    color: #5768ad;
+    background-color: #fff;
+    padding: 10px 20px;
+    border: 1px solid rgba(155,158,163,.2);
+}
+
+.button-join:hover {
+    background-color: #5768ad;
+    color: #fff;
+    border-color: #5768ad;
+}
+
+.classes-item {
     box-shadow: 0 0 65px rgba(12,26,39,.05);
-} 
+}
