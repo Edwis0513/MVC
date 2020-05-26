@@ -6,10 +6,59 @@ body {
     font-family: 'DM Sans', sans-serif;
 }
 
+h2 {
+    font-size: 70px;
+}
+
+h3 {
+    font-size: 44px;
+    font-weight: 400;
+    color: #263246;
+    margin: 34px 0 30px;
+}
+
+h5 {
+    color: #263246;
+    font-size: 20px;
+    margin: 35px 0px 12px;
+}
+
+p {
+    font-size: 16px;
+    color: #6e7580;
+    line-height: 26px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.h-80 {
+    height: 80%;
+}
+
+.pt-100 {
+    padding-top: 100px;
+}
+.pb-80 {
+    padding-bottom: 80px;
+}
+
 .bg-cover-all {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+ul {
+    list-style: none;
 }
 
 /* ENTER page css */
@@ -29,3 +78,52 @@ body {
     top: 50%;
     margin-top: -150px;
 }
+
+/* Header style */
+
+.hero {
+    background-image: url("/assets/img/hero-1.webp");
+    height: 870px;
+}
+
+.hero-text span {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+
+.nav-link {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.button {
+    display: inline-block;
+    padding: 16px 36px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #5768ad;
+    border-radius: 2px;
+}
+
+/* HOME about  */
+
+.span-blue {
+    color: #404d80;
+}
+
+/* HOME services  */
+
+.services-item {
+    background-color: #fff;
+    padding: 40px 15px 60px;
+    border-radius: 10px;
+    box-shadow: 0 0 65px rgba(12,26,39,.05);
+} 

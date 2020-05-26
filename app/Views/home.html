@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
@@ -13,32 +14,27 @@
 </head>
 
 <body>
-    <header class="">
-        <!-- Header TOP -->
+    <header>
+        <!-- HEADER TOP -->
         <div class="top-header container-fluid">
             <div class="container">
                 <img src="/assets/img/logo.webp" alt="">
                 <ul>
-                    <li></li>
+                    <li>CALL US: + 1 800-567-8990</li>
                     <li></li>
                     <li></li>
                 </ul>
                 <button>Join us</button>
             </div>
         </div>
-        <!-- Navigatio links -->
-        <div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
+        <div class="hero bg-cover-all container-fluid text-white">
+            <!-- NAVIGATION links -->
+            <nav class="container">
+                <div class="row justify-content-between align-items-center py-3">
+                    <ul class="col-8 row justify-content-between">
                         <li class="nav-item active">
-                            <a class="nav-link" href="/app/Views/home.html">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/app/Views/home.html">Home <span
+                                    class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/app/Views/about.html">About</a>
@@ -52,7 +48,8 @@
                                 Pages
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="/app/Views/pages/classes-details.html">Classes Details</a>
+                                <a class="dropdown-item" href="/app/Views/pages/classes-details.html">Classes
+                                    Details</a>
                                 <a class="dropdown-item" href="/app/Views/pages/blog-details.html">Blog Details</a>
                                 <a class="dropdown-item" href="/app/Views/pages/pricing.html">Pricing</a>
                                 <a class="dropdown-item" href="/app/Views/pages/faq.html">Faq</a>
@@ -65,11 +62,173 @@
                             <a class="nav-link" href="/app/Views/contact.html">Contact</a>
                         </li>
                     </ul>
+                    <!-- SOCIAL icons -->
+                    <ul class="col-3 row">
+                        <li>
+                            <a class="px-3 text-white" href=""><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a class="px-3 text-white" href=""><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a class="px-3 text-white" href=""><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a class="px-3 text-white" href=""><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
+            <div class="container h-80 d-flex justify-content-center align-items-center">
+
+                <div id="carouselExampleControls" class="carousel slide w-100" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="hero-text">
+                                <span class="pb-4 d-block">Welcome to Zogin</span>
+                                <h2 class="w-60 pb-4">What hurts today makes you stronger tomorrow</h2>
+                                <a class="button" href="">DISCOVER MORE</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="hero-text">
+                                <span class="pb-4 d-block">Welcome to Zogin</span>
+                                <h2 class="w-60 pb-4">What hurts today makes you stronger tomorrow</h2>
+                                <a class="button" href="">DISCOVER MORE</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="hero-text">
+                                <span class="pb-4 d-block">Welcome to Zogin</span>
+                                <h2 class="w-60 pb-4">What hurts today makes you stronger tomorrow</h2>
+                                <a class="button" href="">DISCOVER MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
         </div>
     </header>
-
+    <main>
+        <!-- ABOUT section -->
+        <section class="container-fluid pt-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-7 row">
+                        <div class="d-flex flex-column">
+                            <img class="mr-20 " src="/assets/img/about-1.webp" alt="">
+                        </div>
+                        <div class="d-flex flex-column ">
+                            <img class="mb-20" src="/assets/img/about-2.webp" alt="">
+                            <img src="/assets/img/about-3.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="mt-4 ml-4">
+                            <img src="/assets/img/icon.webp" alt="">
+                            <h3>Welcome to Zogin</h3>
+                            <span class="span-blue d-block mb-3">“What hurts today makes you stronger tomorrow.”</span>
+                            <p>We are offering internationally certified 200 Hour Yoga Teacher Training in Rishikesh and
+                                300 hour yoga teacher training in Rishikesh, India - Join us to have such
+                                life-transforming experience in The world capital of Yoga in Rishikesh.</p>
+                            <p>Zogin is a great place for those who are in search of the ancient practice and true
+                                essence of yoga, meditation, health, peace and learning the art of creating a class to
+                                teach safely. We are passionate about adjustments and mainly focus on the alignment of
+                                the asanas.</p>
+                            <a class="button my-4" href="">More about us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SERVICES section -->
+        <section class="container-fluid pt-100 pb-80">
+            <div class="text-center">
+                <img src="/assets/img/icon.webp" alt="">
+                <h3>Enjoy All Aspects Of Yoga</h3>
+            </div>
+            <div class="row ">
+                <!-- CARD 1 -->
+                <div class="col-2">
+                    <div class="services-item text-center">
+                        <img src="/assets/img/services-1.webp" alt="">
+                        <h5>Asana</h5>
+                        <p>Grab the opportunity to deepen your own yoga practice, relax, restore and experience india!
+                        </p>
+                    </div>
+                </div>
+                <!-- CARD 2 -->
+                <div class="col-2">
+                    <div class="services-item text-center">
+                        <img src="/assets/img/services-2.webp" alt="">
+                        <h5>Meditation</h5>
+                        <p>Grab the opportunity to deepen your own yoga practice, relax, restore and experience india!
+                        </p>
+                    </div>
+                </div>
+                <!-- CARD 3 -->
+                <div class="col-2">
+                    <div class="services-item text-center">
+                        <img src="/assets/img/services-3.webp" alt="">
+                        <h5>Mudra</h5>
+                        <p>Grab the opportunity to deepen your own yoga practice, relax, restore and experience india!
+                        </p>
+                    </div>
+                </div>
+                <!-- CARD 4 -->
+                <div class="col-2">
+                    <div class="services-item text-center">
+                        <img src="/assets/img/services-4.webp" alt="">
+                        <h5>Bandhas</h5>
+                        <p>Grab the opportunity to deepen your own yoga practice, relax, restore and experience india!
+                        </p>
+                    </div>
+                </div>
+                <!-- CARD 5 -->
+                <div class="col-2">
+                    <div class="services-item text-center">
+                        <img src="/assets/img/services-5.webp" alt="">
+                        <h5>Philosophy</h5>
+                        <p>Grab the opportunity to deepen your own yoga practice, relax, restore and experience india!
+                        </p>
+                    </div>
+                </div>
+                <!-- CARD 6 -->
+                <div class="col-2">
+                    <div class="services-item text-center">
+                        <img src="/assets/img/services-6.webp" alt="">
+                        <h5>Pranayama</h5>
+                        <p>Grab the opportunity to deepen your own yoga practice, relax, restore and experience india!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SHOOSE US section -->
+        <section class="container-fluid pt-100 pb-80 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="mb-2 mt-1">Why Choose Us</h3>
+                        <p>We are offering internationally certified 200 Hour Yoga Teacher Training in Rishikesh and 300
+                            hour yoga teacher training in Rishikesh, India - Join us to have such life-transforming
+                            experience in The world capital of Yoga in Rishikesh.</p>
+                    </div>
+                    <div class="col">
+                        <img src="/assets/img/choose-pic.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="/assets/js/jquery.js"></script>
     <script src="/assets/js/bootstrap.bundle.js"></script>
 </body>
