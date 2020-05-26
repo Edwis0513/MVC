@@ -69,6 +69,9 @@ ul {
     list-style: none;
 }
 
+.bg-blue {
+    background: #5768ad;
+}
 /* ENTER page css */
 
 #enter-site {
@@ -176,3 +179,34 @@ ul {
 .classes-item {
     box-shadow: 0 0 65px rgba(12,26,39,.05);
 }
+.appointment-form {
+    padding: 0 100px;
+}
+
+input[type="text"],
+input[type="email"],
+.select {
+    height: 50px;
+    padding-left: 20px!important;
+}
+
+input[type="text"],
+input[type="email"],
+.select,
+.textarea {
+    background-color: rgba(255,255,255,.2);
+    border: none;
+}
+
+.select:hover {
+    color: #fff;
+    background-color: rgba(255,255,255,.2);
+}
+
+.select {
+    color: #fff;
+}
+
+::placeholder {
+    color: #fff!important;
+  }
