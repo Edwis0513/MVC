@@ -16,15 +16,17 @@
 <body>
     <header>
         <!-- HEADER TOP -->
-        <div class="top-header container-fluid">
+        <div class="top-header container-fluid py-4">
             <div class="container">
-                <img src="/assets/img/logo.webp" alt="">
-                <ul>
-                    <li>CALL US: + 1 800-567-8990</li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <button>Join us</button>
+                <div class="row justify-content-between align-items-center">
+                    <img src="/assets/img/logo.webp" alt="">
+                    <ul class="top-list row m-0">
+                        <li>CALL US: + 1 800-567-8990</li>
+                        <li>WRITE US: OFFICE@EXAMPLE.COM</li>
+                        <li>OPENING TIMES: MON - FRI: 9:00 - 19:00</li>
+                    </ul>
+                    <a class="button" href="">JOIN US</a>
+                </div>
             </div>
         </div>
         <div class="hero bg-cover-all container-fluid text-white">
@@ -63,18 +65,18 @@
                         </li>
                     </ul>
                     <!-- SOCIAL icons -->
-                    <ul class="col-3 row">
+                    <ul class="col-3 row justify-content-end">
                         <li>
-                            <a class="px-3 text-white" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="pl-4 text-white" href=""><i class="fab fa-facebook-f"></i></a>
                         </li>
                         <li>
-                            <a class="px-3 text-white" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="pl-4 text-white" href=""><i class="fab fa-instagram"></i></a>
                         </li>
                         <li>
-                            <a class="px-3 text-white" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="pl-4 text-white" href=""><i class="fab fa-twitter"></i></i></a>
                         </li>
                         <li>
-                            <a class="px-3 text-white" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="pl-4 text-white" href=""><i class="fab fa-linkedin-in"></i></i></a>
                         </li>
                     </ul>
                 </div>
@@ -377,7 +379,7 @@
                 </div>
         </section>
         <!-- APPOINTMENT section  -->
-        <section class="container-fluid">
+        <section class="container-fluid pb-80">
             <div class="container bg-blue pb-5">
                 <div class="text-center py-5">
                     <img class="" src="/assets/img/icon-white.webp" alt="">
@@ -398,12 +400,151 @@
                         </select>
                     </div>
                     <div class="form-group mb-4">
-                        <textarea class="textarea form-control" placeholder="Message" id="exampleFormControlTextarea1" rows="3"></textarea>
-                      </div>
-                    </form>
+                        <textarea class="textarea form-control" placeholder="Message" id="exampleFormControlTextarea1"
+                            rows="3"></textarea>
+                    </div>
+                    <div class="input-group mb-4 d-flex justify-content-center">
+                        <input class="mr-3 submit" type="submit">
+                    </div>
                 </form>
             </div>
         </section>
+        <!-- Section testimonial -->
+        <section class="container-fluid bg-light pb-80 pt-100">
+            <div class="container">
+                <div id="carouselExampleIndicators" class="h-400 carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <!-- item 1 -->
+                        <div
+                            class="testimonial-item carousel-item active text-center f-flex justify-content-center position-relative">
+                            <div class="mt-80">
+                                <p class="w-85 m-auto pb-4">This is my second time completing a 200 hr TTC from Zogin
+                                    and I loved the experiences
+                                    even more than the first time that I had done in 2017.</p>
+                                <img src="/assets/img/testimonial-1.png" alt="">
+                                <h5>Linie Walton <span>- Trainer</span></h5>
+                            </div>
+                        </div>
+                        <!-- item 2 -->
+                        <div
+                            class="testimonial-item carousel-item text-center f-flex justify-content-center position-relative">
+                            <div class="mt-80">
+                                <p class="w-85 m-auto pb-4">This is my second time completing a 200 hr TTC from Zogin
+                                    and I loved the experiences
+                                    even more than the first time that I had done in 2017.</p>
+                                <img src="/assets/img/testimonial-1.png" alt="">
+                                <h5>Linie Walton <span>- Trainer</span></h5>
+                            </div>
+                        </div>
+                        <!-- item 3 -->
+                        <div
+                            class="testimonial-item carousel-item text-center f-flex justify-content-center position-relative">
+                            <div class="mt-80">
+                                <p class="w-85 m-auto pb-4">This is my second time completing a 200 hr TTC from Zogin
+                                    and I loved the experiences
+                                    even more than the first time that I had done in 2017.</p>
+                                <img src="/assets/img/testimonial-1.png" alt="">
+                                <h5>Linie Walton <span>- Trainer</span></h5>
+                            </div>
+                        </div>
+                        <!-- item 4 -->
+                        <div
+                            class="testimonial-item carousel-item text-center f-flex justify-content-center position-relative">
+                            <div class="mt-80">
+                                <p class="w-85 m-auto pb-4">This is my second time completing a 200 hr TTC from Zogin
+                                    and I loved the experiences
+                                    even more than the first time that I had done in 2017.</p>
+                                <img src="/assets/img/testimonial-1.png" alt="">
+                                <h5>Linie Walton <span>- Trainer</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <footer class="container-fluid pt-5">
+            <div class="container">
+                <div class="row pb-5">
+                    <div class="col-4">
+                        <img class="mb-3 mt-3" src="/assets/img/footer-logo.webp" alt="">
+                        <ul class="time-list my-3">
+                            <li><i class="far fa-clock"></i> Mon - Fri: 6:30am - 07:45pm</li>
+                            <li><i class="far fa-clock"></i> Sat - Sun: 8:30am - 05:45pm</li>
+                        </ul>
+                        <form class="mt-5" action="">
+                            <div class="input-group w-100">
+                                <input class="footer-form form-control" type="text" placeholder="Your Email">
+                                <button class="btn-send"><i class="fas fa-paper-plane"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="footer-col col ml-5">
+                        <h5>Inspiration</h5>
+                        <ul>
+                            <li><a href="">Online Pilates</a></li>
+                            <li><a href="">Yoga for Beginners</a></li>
+                            <li><a href="">Online Pilates</a></li>
+                            <li><a href="">Online Yoga</a></li>
+                            <li><a href="">Conditioning</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col">
+                        <h5>About Us</h5>
+                        <ul>
+                            <li><a href="">Our Vision</a></li>
+                            <li><a href="">Our Mission</a></li>
+                            <li><a href="">Meet The Team</a></li>
+                            <li><a href="">Introduce</a></li>
+                            <li><a href="">Customer Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col">
+                        <h5>Contact Us</h5>
+                        <ul>
+                            <li><a href=""><i class="fas fa-phone-alt"></i> (01) 436 8888</a></li>
+                            <li><a href=""><i class="fas fa-envelope"></i> hello@zogin.com</a></li>
+                            <li><a href=""><i class="fas fa-location-arrow"></i> 828 Granville Lights Suite 466</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="row justify-content-between">
+                    <p class="col-8 pt-3 pb-1">Copyright ©2020 All rights reserved | This template is made with by
+                        Colorlib
+                    </p>
+                    <!-- SOCIAL -->
+                    <ul class="col-3 pt-3 pb-1 row">
+                        <li>
+                            <a class="px-3 text-white" href=""><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a class="px-3 text-white" href=""><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a class="px-3 text-white" href=""><i class="fab fa-twitter"></i></i></a>
+                        </li>
+                        <li>
+                            <a class="px-3 text-white" href=""><i class="fab fa-linkedin-in"></i></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </footer>
     </main>
     <script src="/assets/js/jquery.js"></script>
     <script src="/assets/js/bootstrap.bundle.js"></script>

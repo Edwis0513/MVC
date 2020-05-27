@@ -46,19 +46,30 @@ p {
 .w-60 {
     width: 60%;
 }
-
+.w-85 {
+    width: 85%;
+}
 .h-80 {
     height: 80%;
 }
 
+.h-400 {
+    height: 400px;
+} 
 .pt-100 {
     padding-top: 100px;
+}
+
+.pt-1000 {
+    padding-top: 700px;
 }
 
 .pb-80 {
     padding-bottom: 80px;
 }
-
+.mt-80 {
+    margin-top: 80px;
+}
 .bg-cover-all {
     background-position: center;
     background-size: cover;
@@ -122,6 +133,11 @@ ul {
     color: #fff;
     background-color: #5768ad;
     border-radius: 2px;
+}
+
+.top-list li {
+    font-size: 12px;
+    margin: 0 5px;
 }
 
 /* HOME about  */
@@ -210,3 +226,111 @@ input[type="email"],
 ::placeholder {
     color: #fff!important;
   }
+
+.submit {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #5768ad;
+    background-color: #fff;
+    border: none;
+    border-radius: 2px;
+    padding: 13px 35px;
+} 
+
+/* HOME testimonial */
+
+.testimonial-item p {
+    display: block;
+    color: #263246;
+    font-size: 36px;
+    line-height: 48px;
+}
+
+.testimonial-item h5 {
+    margin: 15px 0 15px ;
+}
+
+.testimonial-item h5 span {
+    font-size: 18px;
+    color: #9b9ea3;
+    font-weight: 400;
+}
+
+
+
+.testimonial-item::before {
+    position: absolute;
+    left: 0;
+    right: 0;
+    content: '"';
+    color: #5768ad;
+    font-size: 160px;
+    line-height: 119px;
+    margin: 0 auto;
+}
+
+.carousel-indicators li {
+    background-color: #8a8a9e;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    margin:0 20px 0 0;
+}
+
+/* FOOTER section */
+
+footer {
+    background: #263246;
+}
+
+.time-list {
+    color: #9b9ea3;
+    line-height: 37px;
+    font-size: 16px;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.time-list li i {
+    margin-right: 5px;
+    color: #5768ad;
+}
+
+.btn-send {
+    font-size: 20px;
+    color: #fff;
+    background-color: #5768ad;
+    padding: 0 15px;
+    border: none;
+}
+
+.footer-form::placeholder {
+    color: #999 !important;
+}
+
+.footer-col h5 {
+    color: #fff;
+}
+
+.footer-col ul {
+    padding: 0;
+}
+
+.footer-col ul li {
+    padding: 10px 0 ;
+}
+
+.footer-col ul li a {
+    color: #9b9ea3;
+}
+
+.footer-col ul li a i {
+    margin-right: 7px;
+}
+
+.line {
+    background: #4b4d4e;
+    width: 100%;
+    height: 1px;
+}
