@@ -58,7 +58,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/app/Views/blog.html">Blog <span
-                                class="sr-only">(current)</span></a>
+                                    class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/app/Views/contact.html">Contact</a>
@@ -92,18 +92,216 @@
     </header>
     <main>
         <!-- Blog -->
-        <section class="fluid">
+        <section class="fluid pt-100 pb-80">
             <div class="container">
                 <div class="row">
-                    <!-- SIDE MENIU -->
-                    <div class="col">
-
+                    <!-- LEFT SIDE MENIU -->
+                    <div class="col-4 pr-5">
+                        <form class="search-form form-inline mb-5">
+                            <input class="form-control text-secondary" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <button class="btn" type="submit"><i class="fas fa-search text-secondary"></i></button>
+                        </form>
+                        <h4 class="mb-4">Categories</h4>
+                        <ul class="p-0 text-secondary">
+                            <li class="my-4">All</li>
+                            <li class="my-4">Fuel(20)</li>
+                            <li class="my-4">Sweet(5)</li>
+                            <li class="my-4">Play(9)</li>
+                            <li class="my-4">Live(10)</li>
+                        </ul>
+                        <h4 class="mb-4">Recent News</h4>
+                        <div class="news-card mb-3 d-flex">
+                            <img src="/assets/img/br-1.jpg" alt="">
+                            <div class="ml-3">
+                                <h6 class="font-weight-bold">09 Kinds Of Vegetables Protect The Liver</h6>
+                                <span>MAR 05, 2019</span>
+                            </div>
+                        </div>
+                        <div class="news-card mb-3 d-flex">
+                            <img src="/assets/img/br-2.jpg" alt="">
+                            <div class="ml-3">
+                                <h6 class="font-weight-bold">09 Kinds Of Vegetables Protect The Liver</h6>
+                                <span>MAR 05, 2019</span>
+                            </div>
+                        </div>
+                        <div class="news-card mb-3 d-flex">
+                            <img src="/assets/img/br-3.jpg" alt="">
+                            <div class="ml-3">
+                                <h6 class="font-weight-bold">09 Kinds Of Vegetables Protect The Liver</h6>
+                                <span>MAR 05, 2019</span>
+                            </div>
+                        </div>
+                        <h4 class="mt-5 mb-4">Search By Tags</h4>
+                        <div class="mb-5 d-flex flex-wrap tag-block">
+                            <a href="">Weight</a>
+                            <a href="">Beauty</a>
+                            <a href="">Yoga Ball</a>
+                            <a href="">Fruit</a>
+                            <a href="">Healthy Food</a>
+                            <a href="">Lifestyle</a>
+                        </div>
+                        <h4 class="mb-4">Comment</h4>
+                        <!-- Comment card 1 -->
+                        <div class="d-flex">
+                            <div>
+                                <img src="/assets/img/comment-1.png" alt="">
+                                <div class="comment-rating text-center">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                            <div class="comment-text ml-4">
+                                <span>MAR 05, 2019</span>
+                                <h6 class="my-2 font-weight-bold">Brandon Kelley</h6>
+                                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                                    adipisci velit,</p>
+                            </div>
+                        </div>
+                        <div class="line line-comment bg-light mb-5 mt-4"></div>
+                        <!-- Comment card 2 -->
+                        <div class="d-flex">
+                            <div>
+                                <img src="/assets/img/comment-2.png" alt="">
+                                <div class="comment-rating text-center">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                            <div class="comment-text ml-4">
+                                <span>MAR 05, 2019</span>
+                                <h6 class="my-2 font-weight-bold">Kristina Kelley</h6>
+                                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                                    adipisci velit,</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col"></div>
-                    <div class="col"></div>
+                    <!-- right COL -->
+                    <div class="col-8">
+                        <div class="row">
+                            <!-- Blog item 1 -->
+                            <div class="col">
+                                <div class="blog-item">
+                                    <div class="classes-img" style="background-image: url('/assets/img/blog-1.jpg');">
+                                    </div>
+                                    <div class="blog-item-text py-4">
+                                        <p>14 Days | Start on 10th Every Month</p>
+                                        <a href="">
+                                            <h4 class="">You can keep fit at university</h4>
+                                        </a>
+                                        <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam
+                                            quaerat</p>
+                                        <a class="button-more mt-4 d-inline-block" href="">READ MORE <i
+                                                class="fas fa-long-arrow-alt-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Blog item 2 -->
+                            <div class="col">
+                                <div class="blog-item">
+                                    <div class="classes-img" style="background-image: url('/assets/img/blog-2.jpg');">
+                                    </div>
+                                    <div class="blog-item-text py-4">
+                                        <p>14 Days | Start on 10th Every Month</p>
+                                        <a href="">
+                                            <h4 class="">You can keep fit at university</h4>
+                                        </a>
+                                        <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam
+                                            quaerat</p>
+                                        <a class="button-more mt-4 d-inline-block" href="">READ MORE <i
+                                                class="fas fa-long-arrow-alt-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ROW 2 -->
+                        <div class="row mt-5">
+                            <!-- Blog item 3 -->
+                            <div class="col">
+                                <div class="blog-item">
+                                    <div class="classes-img" style="background-image: url('/assets/img/blog-3.jpg');">
+                                    </div>
+                                    <div class="blog-item-text py-4">
+                                        <p>14 Days | Start on 10th Every Month</p>
+                                        <a href="">
+                                            <h4 class="">You can keep fit at university</h4>
+                                        </a>
+                                        <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam
+                                            quaerat</p>
+                                        <a class="button-more mt-4 d-inline-block" href="">READ MORE <i
+                                                class="fas fa-long-arrow-alt-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Blog item 4 -->
+                            <div class="col">
+                                <div class="blog-item">
+                                    <div class="classes-img" style="background-image: url('/assets/img/blog-4.jpg');">
+                                    </div>
+                                    <div class="blog-item-text py-4">
+                                        <p>14 Days | Start on 10th Every Month</p>
+                                        <a href="">
+                                            <h4 class="">You can keep fit at university</h4>
+                                        </a>
+                                        <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam
+                                            quaerat</p>
+                                        <a class="button-more mt-4 d-inline-block" href="">READ MORE <i
+                                                class="fas fa-long-arrow-alt-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ROW 3 -->
+                        <div class="row mt-5">
+                            <!-- Blog item 5 -->
+                            <div class="col">
+                                <div class="blog-item">
+                                    <div class="classes-img" style="background-image: url('/assets/img/blog-5.jpg');">
+                                    </div>
+                                    <div class="blog-item-text py-4">
+                                        <p>14 Days | Start on 10th Every Month</p>
+                                        <a href="">
+                                            <h4 class="">You can keep fit at university</h4>
+                                        </a>
+                                        <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam
+                                            quaerat</p>
+                                        <a class="button-more mt-4 d-inline-block" href="">READ MORE <i
+                                                class="fas fa-long-arrow-alt-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Blog item 6 -->
+                            <div class="col">
+                                <div class="blog-item">
+                                    <div class="classes-img" style="background-image: url('/assets/img/blog-6.jpg');">
+                                    </div>
+                                    <div class="blog-item-text py-4">
+                                        <p>14 Days | Start on 10th Every Month</p>
+                                        <a href="">
+                                            <h4 class="">You can keep fit at university</h4>
+                                        </a>
+                                        <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam
+                                            quaerat</p>
+                                        <a class="button-more mt-4 d-inline-block" href="">READ MORE <i
+                                                class="fas fa-long-arrow-alt-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- PAGES  -->
+                        <div class="d-flex justify-content-start my-5 classes-pages">
+                            <button>1</button>
+                            <button>2</button>
+                            <button>></button>
+                        </div>
+                    </div>
                 </div>
-                
-            </div>
         </section>
     </main>
     <footer class="container-fluid pt-5">
