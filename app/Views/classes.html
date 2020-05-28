@@ -38,11 +38,11 @@
                             <a class="nav-link" href="/app/Views/home.html">Home </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/app/Views/about.html">About <span
-                                    class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/app/Views/about.html">About 
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/app/Views/classes.html">Classes</a>
+                            <a class="nav-link" href="/app/Views/classes.html">Classes <span
+                                class="sr-only">(current)</span></a></a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -90,7 +90,345 @@
             </nav>
         </div>
     </header>
-
+    <main>
+        <section class="container-fluid pt-100 pb-80">
+            <div class="container">
+                <div>
+                    <!-- FILTER FORM -->
+                    <form class="filter-form py-4 mb-5" action="">
+                        <div class="form-row justify-content-between mx-5 align-items-end">
+                            <div class="form-group">
+                                <label class="" for="inlineFormCustomSelect">Filter By Day:</label>
+                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                    <option selected>All</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="" for="inlineFormCustomSelect">Level:</label>
+                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                    <option selected>All Levels</option>
+                                    <option value="1">soft boy</option>
+                                    <option value="2">hard boiled egg</option>
+                                    <option value="3">hell</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="" for="inlineFormCustomSelect">Teacher:</label>
+                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                    <option selected>All Teachers</option>
+                                    <option value="1">Dalai Lama</option>
+                                    <option value="2">Jakie Chan</option>
+                                    <option value="3">some one else</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="" for="inlineFormCustomSelect">Style:</label>
+                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                    <option selected>All Styles</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <button class="button button-search"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- ROW 1 -->
+                <div class="row pt-5">
+                    <!-- Classes item 1 -->
+                    <div class="col">
+                        <div class="classes-item">
+                            <div class="classes-img" style="background-image: url('/assets/img/classes-1.webp');">
+                                <span>Beginer</span>
+                            </div>
+                            <div class="classes-item-text pl-4 py-4">
+                                <p>14 Days | Start on 10th Every Month</p>
+                                <a href="">
+                                    <h4 class="pb-5">100 Hour Yoga Course Rishikesh</h4>
+                                </a>
+                                <h6>Jordan Lawson <span>- Yoga Teacher</span></h6>
+                                <a class="button-join mt-4" href="">JOIN NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Classes item 2 -->
+                    <div class="col">
+                        <div class="classes-item">
+                            <div class="classes-img" style="background-image: url('/assets/img/classes-2.webp');">
+                                <span>All levels</span>
+                            </div>
+                            <div class="classes-item-text pl-4 py-4">
+                                <p>14 Days | Start on 10th Every Month</p>
+                                <a href="">
+                                    <h4 class="pb-5">100 Hour Yoga Course Rishikesh</h4>
+                                </a>
+                                <h6>Jordan Lawson <span>- Yoga Teacher</span></h6>
+                                <a class="button-join mt-4" href="">JOIN NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Classes item 3 -->
+                    <div class="col">
+                        <div class="classes-item">
+                            <div class="classes-img" style="background-image: url('/assets/img/classes-3.webp');">
+                                <span>Beginer</span>
+                            </div>
+                            <div class="classes-item-text pl-4 py-4">
+                                <p>14 Days | Start on 10th Every Month</p>
+                                <a href="">
+                                    <h4 class="pb-5">100 Hour Yoga Course Rishikesh</h4>
+                                </a>
+                                <h6>Jordan Lawson <span>- Yoga Teacher</span></h6>
+                                <a class="button-join mt-4" href="">JOIN NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ROW 2 -->
+                <div class="row pt-5">
+                    <!-- Classes item 4 -->
+                    <div class="col">
+                        <div class="classes-item">
+                            <div class="classes-img" style="background-image: url('/assets/img/classes-4.jpg');">
+                                <span>20 Jun 2019</span>
+                            </div>
+                            <div class="classes-item-text pl-4 py-4">
+                                <p>14 Days | Start on 10th Every Month</p>
+                                <a href="">
+                                    <h4 class="pb-5">100 Hour Yoga Course Rishikesh</h4>
+                                </a>
+                                <h6>Jordan Lawson <span>- Yoga Teacher</span></h6>
+                                <a class="button-join mt-4" href="">JOIN NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Classes item 5 -->
+                    <div class="col">
+                        <div class="classes-item">
+                            <div class="classes-img" style="background-image: url('/assets/img/classes-5.jpg');">
+                                <span>20 Jun 2019</span>
+                            </div>
+                            <div class="classes-item-text pl-4 py-4">
+                                <p>14 Days | Start on 10th Every Month</p>
+                                <a href="">
+                                    <h4 class="pb-5">100 Hour Yoga Course Rishikesh</h4>
+                                </a>
+                                <h6>Jordan Lawson <span>- Yoga Teacher</span></h6>
+                                <a class="button-join mt-4" href="">JOIN NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Classes item 6 -->
+                    <div class="col">
+                        <div class="classes-item">
+                            <div class="classes-img" style="background-image: url('/assets/img/classes-6.jpg');">
+                                <span>20 Jun 2019</span>
+                            </div>
+                            <div class="classes-item-text pl-4 py-4">
+                                <p>14 Days | Start on 10th Every Month</p>
+                                <a href="">
+                                    <h4 class="pb-5">100 Hour Yoga Course Rishikesh</h4>
+                                </a>
+                                <h6>Jordan Lawson <span>- Yoga Teacher</span></h6>
+                                <a class="button-join mt-4" href="">JOIN NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ROW 3 -->
+                <div class="row pt-5">
+                    <!-- Classes item 7 -->
+                    <div class="col">
+                        <div class="classes-item">
+                            <div class="classes-img" style="background-image: url('/assets/img/classes-7.jpg');">
+                                <span>20 Jun 2019</span>
+                            </div>
+                            <div class="classes-item-text pl-4 py-4">
+                                <p>14 Days | Start on 10th Every Month</p>
+                                <a href="">
+                                    <h4 class="pb-5">100 Hour Yoga Course Rishikesh</h4>
+                                </a>
+                                <h6>Jordan Lawson <span>- Yoga Teacher</span></h6>
+                                <a class="button-join mt-4" href="">JOIN NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Classes item 8 -->
+                    <div class="col">
+                        <div class="classes-item">
+                            <div class="classes-img" style="background-image: url('/assets/img/classes-8.jpg');">
+                                <span>20 Jun 2019</span>
+                            </div>
+                            <div class="classes-item-text pl-4 py-4">
+                                <p>14 Days | Start on 10th Every Month</p>
+                                <a href="">
+                                    <h4 class="pb-5">100 Hour Yoga Course Rishikesh</h4>
+                                </a>
+                                <h6>Jordan Lawson <span>- Yoga Teacher</span></h6>
+                                <a class="button-join mt-4" href="">JOIN NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Classes item 9 -->
+                    <div class="col">
+                        <div class="classes-item">
+                            <div class="classes-img" style="background-image: url('/assets/img/classes-9.jpg');">
+                                <span>20 Jun 2019</span>
+                            </div>
+                            <div class="classes-item-text pl-4 py-4">
+                                <p>14 Days | Start on 10th Every Month</p>
+                                <a href="">
+                                    <h4 class="pb-5">100 Hour Yoga Course Rishikesh</h4>
+                                </a>
+                                <h6>Jordan Lawson <span>- Yoga Teacher</span></h6>
+                                <a class="button-join mt-4" href="">JOIN NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center m-5 classes-pages">
+                    <button>1</button>
+                    <button>2</button>
+                    <button>></button>
+                </div>
+            </div>
+        </section>
+        <!-- TOP CLASSES section -->
+        <section class="container-flex bg-light pt-100 pb-80">
+            <div class="container">
+                <div class="text-center">
+                    <h3>Top Classes</h3>
+                    <p class="w-50 m-auto">The trainings are multi-style and you will learn and practice Hatha Vinyasa
+                        (flow)
+                        and Yin Yoga.</p>
+                </div>
+                <div class="row pt-5">
+                    <!-- Classes item 10 -->
+                    <div class="col">
+                        <div class="classes-item">
+                            <div class="classes-img" style="background-image: url('/assets/img/classes-10.jpg');">
+                                <span>20 Jun 2019</span>
+                            </div>
+                            <div class="classes-item-text pl-4 py-4">
+                                <p>14 Days | Start on 10th Every Month</p>
+                                <a href="">
+                                    <h4 class="pb-5">100 Hour Yoga Course Rishikesh</h4>
+                                </a>
+                                <h6>Jordan Lawson <span>- Yoga Teacher</span></h6>
+                                <a class="button-join mt-4" href="">JOIN NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Classes item 11 -->
+                    <div class="col">
+                        <div class="classes-item">
+                            <div class="classes-img" style="background-image: url('/assets/img/classes-11.jpg');">
+                                <span>20 Jun 2019</span>
+                            </div>
+                            <div class="classes-item-text pl-4 py-4">
+                                <p>14 Days | Start on 10th Every Month</p>
+                                <a href="">
+                                    <h4 class="pb-5">100 Hour Yoga Course Rishikesh</h4>
+                                </a>
+                                <h6>Jordan Lawson <span>- Yoga Teacher</span></h6>
+                                <a class="button-join mt-4" href="">JOIN NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Classes item 12 -->
+                    <div class="col">
+                        <div class="classes-item">
+                            <div class="classes-img" style="background-image: url('/assets/img/classes-12.jpg');">
+                                <span>20 Jun 2019</span>
+                            </div>
+                            <div class="classes-item-text pl-4 py-4">
+                                <p>14 Days | Start on 10th Every Month</p>
+                                <a href="">
+                                    <h4 class="pb-5">100 Hour Yoga Course Rishikesh</h4>
+                                </a>
+                                <h6>Jordan Lawson <span>- Yoga Teacher</span></h6>
+                                <a class="button-join mt-4" href="">JOIN NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="container-fluid pt-5">
+        <div class="container">
+            <div class="row pb-5">
+                <div class="col-4">
+                    <img class="mb-3 mt-3" src="/assets/img/footer-logo.webp" alt="">
+                    <ul class="time-list my-3">
+                        <li><i class="far fa-clock"></i> Mon - Fri: 6:30am - 07:45pm</li>
+                        <li><i class="far fa-clock"></i> Sat - Sun: 8:30am - 05:45pm</li>
+                    </ul>
+                    <form class="mt-5" action="">
+                        <div class="input-group w-100">
+                            <input class="footer-form form-control" type="text" placeholder="Your Email">
+                            <button class="btn-send"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="footer-col col ml-5">
+                    <h5>Inspiration</h5>
+                    <ul>
+                        <li><a href="">Online Pilates</a></li>
+                        <li><a href="">Yoga for Beginners</a></li>
+                        <li><a href="">Online Pilates</a></li>
+                        <li><a href="">Online Yoga</a></li>
+                        <li><a href="">Conditioning</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col col">
+                    <h5>About Us</h5>
+                    <ul>
+                        <li><a href="">Our Vision</a></li>
+                        <li><a href="">Our Mission</a></li>
+                        <li><a href="">Meet The Team</a></li>
+                        <li><a href="">Introduce</a></li>
+                        <li><a href="">Customer Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col col">
+                    <h5>Contact Us</h5>
+                    <ul>
+                        <li><a href=""><i class="fas fa-phone-alt"></i> (01) 436 8888</a></li>
+                        <li><a href=""><i class="fas fa-envelope"></i> hello@zogin.com</a></li>
+                        <li><a href=""><i class="fas fa-location-arrow"></i> 828 Granville Lights Suite 466</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="row justify-content-between">
+                <p class="col-8 pt-3 pb-1">Copyright ©2020 All rights reserved | This template is made with by
+                    Colorlib
+                </p>
+                <!-- SOCIAL -->
+                <ul class="col-3 pt-3 pb-1 row">
+                    <li>
+                        <a class="px-3 text-white" href=""><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a class="px-3 text-white" href=""><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a class="px-3 text-white" href=""><i class="fab fa-twitter"></i></i></a>
+                    </li>
+                    <li>
+                        <a class="px-3 text-white" href=""><i class="fab fa-linkedin-in"></i></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
     <script src="/assets/js/jquery.js"></script>
     <script src="/assets/js/bootstrap.bundle.js"></script>
 </body>
