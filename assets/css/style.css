@@ -7,6 +7,12 @@ body {
     font-family: 'DM Sans', sans-serif;
 }
 
+ul {
+    list-style: none;
+}
+
+/* headers */
+
 h2 {
     font-size: 70px;
 }
@@ -36,6 +42,8 @@ p {
     line-height: 26px;
 }
 
+/* margin */
+
 .mb-20 {
     margin-bottom: 20px;
 }
@@ -44,21 +52,11 @@ p {
     margin-right: 20px;
 }
 
-.w-60 {
-    width: 60%;
+.mt-80 {
+    margin-top: 80px;
 }
 
-.w-85 {
-    width: 85%;
-}
-
-.h-80 {
-    height: 80%;
-}
-
-.h-400 {
-    height: 400px;
-}
+/* paddings */
 
 .pt-100 {
     padding-top: 100px;
@@ -80,8 +78,24 @@ p {
     padding-bottom: 80px;
 }
 
-.mt-80 {
-    margin-top: 80px;
+/* custom width */
+
+.w-60 {
+    width: 60%;
+}
+
+.w-85 {
+    width: 85%;
+}
+
+/* custom height */
+
+.h-400 {
+    height: 400px;
+}
+
+.h-80 {
+    height: 80%;
 }
 
 .bg-cover-all {
@@ -90,9 +104,6 @@ p {
     background-repeat: no-repeat;
 }
 
-ul {
-    list-style: none;
-}
 
 .bg-blue {
     background: #5768ad;
@@ -169,6 +180,7 @@ ul {
     color: #fff;
     background-color: #5768ad;
     border-radius: 2px;
+    border: none;
 }
 
 .button:hover {
@@ -357,7 +369,6 @@ footer {
     color: #9b9ea3;
     line-height: 37px;
     font-size: 16px;
-    list-style: none;
     margin-left: 0;
     padding-left: 0;
 }
@@ -482,6 +493,19 @@ main {
 .number-position-1 {
     right: 54px;
 }
+
+.number-position-2 {
+    right: 92px;
+}
+
+.number-position-3 {
+    right: 54px;
+}
+
+.number-position-4 {
+    right: 26px;
+}
+
 
 .progress-number::after {
     position: absolute;
