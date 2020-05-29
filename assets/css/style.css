@@ -132,6 +132,8 @@ ul {
 
 .nav-link {
     padding: 0;
+    position: relative;
+    color: #fff;
 }
 
 .nav-link:hover {
@@ -139,6 +141,7 @@ ul {
     position: relative;
 }
 
+.nav-act::before,
 .nav-link:hover::before {
     position: absolute;
     left: 0;
@@ -168,6 +171,15 @@ ul {
     border-radius: 2px;
 }
 
+.button:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 .top-list li {
     font-size: 12px;
     margin: 0 5px;
@@ -175,29 +187,19 @@ ul {
 
 .prev-style {
     left: -70px;
-    width: 100px;
-    position: absolute;
-
-
 }
 
-.prev-style span {
-    font-size: 20px;
-    width: 46px;
-    height: 46px;
-    background-image: none;
-    background-color: rgba(255, 255, 255, 0.3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.prev-style,
+.next-style {
+    width: 100px;
+    position: absolute;
 }
 
 .next-style {
     right: -70px;
-    width: 100px;
-    position: absolute;
 }
 
+.prev-style span,
 .next-style span {
     font-size: 20px;
     width: 46px;
@@ -221,7 +223,6 @@ ul {
     background-color: #fff;
     padding: 40px 15px 60px;
     border-radius: 10px;
-    box-shadow: 0 0 65px rgba(12, 26, 39, .05);
 }
 
 /* HOME classes */
@@ -261,6 +262,7 @@ ul {
     border-color: #5768ad;
 }
 
+.services-item,
 .classes-item {
     box-shadow: 0 0 65px rgba(12, 26, 39, .05);
 }
@@ -373,6 +375,7 @@ footer {
     border: none;
 }
 
+
 .footer-form::placeholder {
     color: #999 !important;
 }
@@ -437,6 +440,21 @@ footer {
     z-index: -1;
 }
 
+main {
+    overflow: hidden;
+}
+
+.bg-right::before {
+    background-image: url("/assets/img/background-right.png");
+    position: absolute;
+    content: "";
+    right: -120px;
+    bottom: -120px;
+    width: 459px;
+    height: 504px;
+    z-index: 1;
+}
+
 .about-bar p {
     font-weight: 700;
     color: #212529;
@@ -480,24 +498,6 @@ footer {
     top: -30px;
 }
 
-.bg-img-right {
-    position: relative;
-    overflow: hidden;
-}
-
-.bg-img-right::before {
-    background-image: url("/assets/img/background-right.png");
-    background-repeat: no-repeat;
-    position: absolute;
-    content: "";
-    right: -120px;
-    bottom: -120px;
-    width: 459px;
-    height: 504px;
-    z-index: 0;
-}
-
-
 /* team corosel */
 
 .team-card {
@@ -517,7 +517,7 @@ footer {
     height: 240px;
 }
 
-/* classes */
+/* classes page */
 
 .filter-form {
     box-shadow: 0px 10px 20px rgba(35, 37, 43, 0.1);
@@ -542,7 +542,7 @@ footer {
     background: #5768ad
 }
 
-/* blog */
+/* blog page */
 
 .search-form {
     display: flex;
@@ -550,7 +550,7 @@ footer {
     border: solid 1px #cfcfcf;
     height: 46px;
     border-radius: 20px;
-} 
+}
 
 .search-form input {
     margin-left: 10px;
@@ -575,12 +575,12 @@ footer {
 
 .comment-rating i {
     font-size: 11px;
-    margin:0 -2px;
+    margin: 0 -2px;
     color: #f5c136;
 }
 
 .comment-text h6 {
-    color:#5768ad;
+    color: #5768ad;
 }
 
 .comment-text p {
@@ -589,7 +589,7 @@ footer {
 
 .line-comment {
     height: 2px;
-} 
+}
 
 .button-more {
     color: #9b9ea3;
@@ -597,6 +597,7 @@ footer {
     border: solid 1px #e0e0e0;
     border-radius: 30px;
 }
+
 .button-more:hover {
     text-decoration: none;
     color: #9b9ea3;
@@ -611,7 +612,7 @@ footer {
     color: #263246;
 }
 
-/* contats */
+/* contats page */
 
 .contact-card i {
     color: #5768ad;
@@ -623,11 +624,21 @@ iframe {
     height: 500px;
 }
 
+.arrow-bg,
 .adress-map {
     background-color: #fff;
+}
+
+.adress-map,
+.adress-map::after,
+.map-icon {
+    position: absolute;
+
+}
+
+.adress-map {
     box-shadow: 0 0 20px 5px rgba(12, 7, 26, 0.15);
     display: flex;
-    position: absolute;
     left: 50%;
     margin-left: -170px;
     top: 50%;
@@ -638,8 +649,8 @@ iframe {
     width: 340px;
     height: 140px;
 }
+
 .adress-map::after {
-    position: absolute;
     top: 114px !important;
     content: "\27A4";
     transform: rotate(90deg);
@@ -651,7 +662,6 @@ iframe {
 .map-icon {
     font-size: 48px;
     color: #5768ad;
-    position: absolute;
     left: 50%;
     margin-left: -18px;
     top: 292px;
@@ -662,7 +672,7 @@ iframe {
 textarea {
     color: #9b9ea3;
     border: solid 1px #d1d2d3;
-    padding-left: 30px !important ;
+    padding-left: 30px !important;
 }
 
 .comment-form div textarea {
@@ -674,6 +684,23 @@ textarea {
 }
 
 .comment-form input::placeholder,
-textarea::placeholder {
+.comment-form textarea::placeholder {
     color: #9b9ea3 !important;
+}
+
+.arrow-bg {
+    color: #000;
+    padding: 15px;
+}
+
+.control-opacity {
+    opacity: 1 !important;
+}
+
+.appointment-form .form-control,
+.appointment-form .form-control:focus,
+.footer-form:focus,
+.footer-form {
+    background-color: rgba(255, 255, 255, .2);
+    color: #fff;
 }
